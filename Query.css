@@ -4,6 +4,11 @@
 
 
 
+
+
+
+
+
 @media (min-width:1665px) and ( max-width:1910px){
 
      .title3{
@@ -3257,10 +3262,12 @@ height:calc(var(--h) - calc(0.5 * var(--h)));
 }
 .box10flex1{
     margin-bottom:calc(var(--mb) - calc(0.7 * var(--mb)));
+
 }
 
 .box10title{
     font-size:calc(var(--fs) - calc(0.7 * var(--fs)));
+    filter: blur(2px);
 }
 .box10text{
  font-size:calc(var(--fs) - calc(0.7 * var(--fs)));
@@ -3272,6 +3279,7 @@ height:calc(var(--h) - calc(0.5 * var(--h)));
     height:calc(var(--h) - calc(0.7 * var(--h)));
  border-radius:calc(var(--br) - calc(0.7 * var(--br)));
  margin-right:calc(var(--mr) - calc(0.7 * var(--mr)));
+   filter: blur(2px);
 }
 
 .navbarp{
@@ -4230,6 +4238,7 @@ object-fit: cover;
 
 .box10title{
     font-size:calc(var(--fs) - calc(0.7 * var(--fs)));
+    filter: blur(2px);
 }
 .box10text{
  font-size:calc(var(--fs) - calc(0.7 * var(--fs)));
@@ -4241,6 +4250,7 @@ object-fit: cover;
     height:calc(var(--h) - calc(0.7 * var(--h)));
  border-radius:calc(var(--br) - calc(0.7 * var(--br)));
  margin-right:calc(var(--mr) - calc(0.7 * var(--mr)));
+ filter: blur(2px);
 }
 
 .navbarp{
