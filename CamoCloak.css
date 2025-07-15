@@ -1,12 +1,17 @@
 
+
 @font-face{
   font-family:"myfont";
-  src:url(font/VertigoFLF.ttf);
+  src:url(font/spaceage.ttf);
  }
  @font-face{
  font-family:"myfont2";
- src:url(font/LABTSEC_.ttf);
+ src:url(font/Arkitech.ttf);
         }
+@font-face{
+  font-family:"myfont3";
+  src:url(font/spaceage.ttf);
+ }
 
     #left{
         align-self:start;
@@ -77,21 +82,22 @@ a{
 
 
 .sbbutton{
-    width:100px;
-    height:50px;
+    width:200px;
+    height:40px;
     color:white;
     background-color:transparent;
     border:none;
-    font-family:myfont2;
-    font-size:25pt;
+    font-family:myfont;
+    font-size:17pt;
     font-weight:bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align:left;
     text-shadow:0 0 1px white;
     margin-right:25px;
        display:flex;
-    justify-content:left;
+    justify-content:start;
     align-self:center;
+    align-items: center;
 }
 
 .sbicon{
@@ -265,14 +271,14 @@ top:var(--t);
 }
 
 .logotext{
-    --fs:50pt;
-    --ls:9px;
-    letter-spacing: var(--ls);
+    --fs:27pt;
     font-size:var(--fs);
-    font-family: myfont;
+    font-family: myfont3;
     color:white;
     text-shadow:0px 0px 2px white;
     cursor: none;
+    width:50%;
+
 
    
 }
@@ -405,7 +411,7 @@ background-image:linear-gradient(to TOP,
 }
 
 .box10title{
-    --fs:140pt;
+    --fs:65pt;
     font-size:var(--fs);
     font-family:myfont;
     font-weight:bold;
@@ -417,14 +423,14 @@ background-image:linear-gradient(to TOP,
     transform: translateX(-100%);
 }
 .box10text{
-    --fs:40pt;
-    --mb:20px;
+    --fs:25pt;
+    --mb:10px;
  font-size:var(--fs);
  font-family:myfont;
  color:white;
  text-align:center;
  margin-bottom:var(--mb);
-   filter: blur(7px);
+   filter: blur(6px);
     opacity:50%;
     transition:all 0.6s;
     transform: translateY(100%);
@@ -464,7 +470,7 @@ background-image:linear-gradient(to TOP,
 
 .navbar{
     --h:110px;
-    --mb:150px;
+    --mb:170px;
     --mt:20px;
     display: flex;
     flex-direction: row;
@@ -566,10 +572,10 @@ object-fit: cover;
 }
 
 .button2{
-    --fs:28pt;
-    --w:80px;
+    --fs:15pt;
+    --w:110px;
     --h:50px;
-    font-family: myfont2;
+    font-family: myfont3;
     font-size:var(--fs);
     color:black;
     background-color:transparent;
@@ -585,10 +591,10 @@ object-fit: cover;
 }
 
 .button1{
-    --fs:28pt;
-    --w:80px;
+    --fs:15pt;
+    --w:100px;
     --h:50px;
-    font-family: myfont2;
+    font-family: myfont3;
     font-size:var(--fs);
     color:white;
     background-color:transparent;
@@ -636,7 +642,7 @@ object-fit: cover;
 --w:150px;
 --h:65px;
 --br:20px;
---fs:23pt;
+--fs:18pt;
 --mt:30px;
  cursor:none;
 width:var(--w);
@@ -647,7 +653,7 @@ align-self:center;
 border:1px solid transparent;
 font-size:var(--fs);
 font-weight:bold;
-font-family: myfont2;
+font-family: myfont3;
 color:black;
 box-shadow:0px 0px 20px rgba(13,207,195,255), 0px 0px 10px rgba(13,207,195,255); 
 margin-top:var(--mt);
@@ -699,7 +705,7 @@ z-index:100;
 }
 
 .glowline{
-    --w:500px;
+    --w:760px;
     --h:2px;
     width:var(--w);
     height:var(--h);
@@ -707,6 +713,7 @@ z-index:100;
     box-shadow:0px 0px 5px white;
     align-self:center;
     z-index: 2;
+    display:none;
 }
 
 .glowline2{
@@ -729,11 +736,11 @@ font-style: italic;
 
 
 .title{
-    --fs:98pt;
-    --ls:5px;
-    --lh:125px;
+    width:70%;
+    --fs:70pt;
+    --lh:90px;
     color:white;
-    font-family:myfont;
+    font-family:myfont2;
     font-weight:bold;
     font-size:var(--fs);
     text-shadow:0px 0px 5px white;
@@ -741,14 +748,14 @@ font-style: italic;
     text-align:center;
     letter-spacing:var(--ls);
     line-height:var(--lh);
+    z-index: 2;
 }
 
 .title2{
-    --fs:60pt;
-    --ls:10px;
-    --lh:90px;
+    --fs:40pt;
+    --lh:50px;
     color:white;
-    font-family:myfont2;
+    font-family:myfont;
     font-weight:lighter;
     font-size:var(--fs);
     text-shadow:0px 0px 5px white;
@@ -769,8 +776,8 @@ font-style: italic;
     text-align: center;
     position: relative;
     top:calc(var(--t) + 30px);
-    --fs:80pt;
-    --ls:8px;
+    --fs:40pt;
+    --ls:3px;
     cursor:none;
      opacity:0;
       filter:blur(3px);
@@ -792,7 +799,7 @@ font-style: italic;
     color:white;
     letter-spacing:var(--ls);
     text-align: center;
-    --fs:60pt;
+    --fs:30pt;
     --ls:8px;
     cursor:none;
      opacity:0;
@@ -805,13 +812,13 @@ font-style: italic;
 
 .title5r{
     
-    --fs:60pt;
-    --ls:5px;
+    --fs:31pt;
+    --ls:1px;
     --mb:20px;
     --b:3px;
     padding:0 2%;
     text-align:center;
-  font-family: myfont, monospace;
+  font-family: myfont2, monospace;
   background:linear-gradient(to right, rgba(13, 207, 195, 1),
    #0e5e58,  #0e5e58, #0a312f ,#0a312f ,
     #0e5e58,#0e5e58, rgba(13, 207, 195, 1));
@@ -833,12 +840,12 @@ font-style: italic;
 }
 .title5l{
   padding:0 2%;
-    --fs:60pt;
-    --ls:5px;
+    --fs:31pt;
+    --ls:1px;
     --mb:20px;
     --b:3px;
     text-align:center;
-  font-family: myfont, monospace;
+  font-family: myfont2, monospace;
   background:linear-gradient(to right, rgba(13, 207, 195, 1),
    #0e5e58,  #0e5e58, #0a312f ,#0a312f ,
     #0e5e58,#0e5e58, rgba(13, 207, 195, 1));
@@ -859,8 +866,10 @@ font-style: italic;
 }
 
 .text5{
-    --fs:30pt;
-    --ls:3px;
+    --lh:35px;
+    line-height:var(--lh);
+    --fs:14pt;
+    --ls:1px;
     --b:3px;
    text-align: center;
     font-size:var(--fs);
@@ -878,12 +887,12 @@ font-style: italic;
 
 
 .title6{
-    --fs:45pt;
+    --fs:30pt;
     --lh:60px;
     width:100%;
     text-align:center;
     color:black;
-     font-family: 'Space Mono', monospace;
+     font-family:myfont2;
     font-weight:bold;
     font-size:var(--fs);
     line-height:var(--lh);
@@ -896,7 +905,7 @@ font-style: italic;
 }
 
 .text6{
-    --fs:24pt;
+    --fs:15pt;
     --mb:30px;
     --ls:4px;
    width:100%;
@@ -914,8 +923,8 @@ font-style: italic;
 }
 
 .text7{
-    --fs:24pt;
-    --ls:2px;
+    --fs:8pt;
+    --ls:1px;
     text-align:left;
     color:white;
     font-family:myfont2;
@@ -1053,7 +1062,7 @@ align-items:center;
   font-size:var(--fs);
   text-align:left;
   transition:transform 0.3s, text-shadow 0.3s;
-  --fs:30pt;
+  --fs:10pt;
 }
 
 .poptextflex{
@@ -1069,8 +1078,8 @@ justify-content: center;
 }
 
 .popimage{
-    --w:85px;
-    --h:85px;
+    --w:83px;
+    --h:83px;
     width:var(--w);
     height:var(--h);
     object-fit: cover;
@@ -1078,11 +1087,14 @@ justify-content: center;
 }
 
 #titlepoptext{
-    --fs:35pt;
+    --fs:17pt;
     --h:120px;
     font-size:var(fs);
      height:var(--h);
     font-family: myfont;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .poptextflex2{
@@ -1096,6 +1108,7 @@ width:var(--w);
 }
 
 #normalpoptext{
+    line-height:var(--lh);
     font-size:var(--fs);
     font-family:myfont2;
      width:var(--w);
@@ -1103,7 +1116,8 @@ width:var(--w);
      text-align:center;
      --w:300px;
      --ls:2px;
-     --fs:21pt;
+     --fs:9pt;
+     --lh:20px;
 }
 
 
@@ -1614,7 +1628,7 @@ box-shadow:0px 0px 20px  rgba(13, 207, 195, 1);
 }
 
 .bbbtitle{
-    --fs:75pt;
+    --fs:22pt;
     font-family:myfont;
     font-weight:bold;
     font-size:var(--fs);
@@ -1622,7 +1636,7 @@ box-shadow:0px 0px 20px  rgba(13, 207, 195, 1);
     text-align:center;  
 }
 .bbbtitlep{
-    --fs:75pt;
+    --fs:20pt;
     font-family:myfont;
     font-weight:bold;
     font-size:var(--fs);
@@ -1631,7 +1645,7 @@ box-shadow:0px 0px 20px  rgba(13, 207, 195, 1);
     display:none; 
 }
 .bbbtitle2{
-    --fs:50pt;
+    --fs:20pt;
     font-family:myfont;
     font-weight:bold;
     font-size:var(--fs);
@@ -1641,8 +1655,8 @@ box-shadow:0px 0px 20px  rgba(13, 207, 195, 1);
 
 
 .bbbtext{
-    --ls:2px;
-    --fs:18px;
+    --ls:0px;
+    --fs:13px;
   font-family:myfont2;
     font-weight:bold;
     font-size:var(--fs);
@@ -1652,7 +1666,7 @@ box-shadow:0px 0px 20px  rgba(13, 207, 195, 1);
     width:90%;
 }
 .bbbtext2{
-    --fs:12pt;
+    --fs:7pt;
     --ls:2px;
     --lh:32px;
   font-family:myfont2;
@@ -1676,9 +1690,9 @@ box-shadow:0px 0px 20px  rgba(13, 207, 195, 1);
 }
 
 .design4{
-    --h:260px;
-    --w:260px;
-    --t:428.2px;
+    --h:320px;
+    --w:320px;
+    --t:432px;
     height:var(--h);
     width:var(--w);
     object-fit:cover;
